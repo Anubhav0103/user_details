@@ -1,0 +1,120 @@
+/* style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background for the whole page */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding: 20px;
+}
+
+/* Container Styling */
+.table-container, .form-container {
+    background-color: #1e1e1e; /* Slightly lighter background for containers */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Search Input Styling */
+.search-username input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Table Styling */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.table-container td {
+    background-color: #2e2e2e;
+}
+
+.table-container tr:nth-child(even) td {
+    background-color: #252525;
+}
+
+/* Form Styling */
+.detail-form input[type="text"], 
+.detail-form input[type="password"], 
+.detail-form select,
+.detail-form input[type="button"] {
+    width: calc(100% - 22px); /* Adjust width for padding */
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.detail-form input[type="button"] {
+    background-color: #6200ea; /* Accent color for button */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.detail-form input[type="button"]:hover {
+    background-color: #3700b3; /* Darker shade on hover */
+}
+
+.form-container {
+    margin-top: 50px;
+    width: 50vh; /* You may want to adjust this based on the content */
+}
+.edit-button,
+.delete-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+
+.edit-button {
+    background-color: #007bff; /* Blue background */
+}
+.edit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.delete-button {
+    background-color: #dc3545; /* Red background */
+}
+.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+.edit-button,
+.delete-button {
+    width: 70px;
+    text-align: center;
+}
